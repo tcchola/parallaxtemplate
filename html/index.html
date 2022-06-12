@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+</head>
+
+<body>
+
+    <div class="img1">
+        <div class="title">
+            <span id="headText" class="border">
+                Parallax WS
+            </span>
+        </div>
+    </div>
+
+    <section class="section section-dark">
+        <h2>- First Section -</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia consequatur, nihil repellat, vitae sit laborum
+            dolore reprehenderit officiis assumenda molestiae, sunt delectus ex minima adipisci quas explicabo. Aliquam,
+            excepturi necessitatibus?</p>
+    </section>
+
+    <div class="img2">
+        <div class="title">
+            <span class="border">
+                Keep Scrolling
+            </span>
+        </div>
+    </div>
+
+    <section class="section section-light">
+        <h2>- Second Section -</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia consequatur, nihil repellat, vitae sit laborum
+            dolore reprehenderit officiis assumenda molestiae, sunt delectus ex minima adipisci quas explicabo. Aliquam,
+            excepturi necessitatibus?</p>
+    </section>
+
+    <div class="img3">
+        <div class="title">
+            <span class="border">
+                Enjoying so far?
+            </span>
+        </div>
+    </div>
+
+    <section class="section section-light">
+        <h2>- Third Section -</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia consequatur, nihil repellat, vitae sit laborum
+            dolore reprehenderit officiis assumenda molestiae, sunt delectus ex minima adipisci quas explicabo. Aliquam,
+            excepturi necessitatibus?</p>
+    </section>
+
+    <div class="img4">
+        <div class="title">
+            <span class="border">
+                Parallax WS
+            </span>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    $("document").ready(function () {
+
+        $(".border").animate({
+            "opacity": "1",
+        }, 5000);
+        $(".title").animate({
+            "margin-top": "20px"
+        }, 5000);
+    });
+</script>
+
+</html>
